@@ -1,9 +1,11 @@
+import React from 'react'
+
 const AddressBar = ({
   url,
   setUrl
 }: {
   url: string
-  setUrl: React.Dispatch<React.SetStateAction<string>>
+  setUrl: (url: string) => void
 }): JSX.Element => {
   return (
     <nav className="navbar bg-primary text-white p-2 border-bottom-dark sticky-top" id="drag">
